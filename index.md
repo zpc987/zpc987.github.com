@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 我的博客
-tagline: zhang pengcheng
+tagline:
 ---
 {% include JB/setup %}
 
