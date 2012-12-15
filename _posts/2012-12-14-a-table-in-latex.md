@@ -4,6 +4,7 @@ category : program
 tags : [latex,table]
 ---
 想使用latex制作下面一个表格。
+
 <img src = "./image/latex2.bmp" align = "center" >
 
 比较难制作的是上面的“LSB”和“MSB”，因为刚学习latex不久，所以想了很久，
