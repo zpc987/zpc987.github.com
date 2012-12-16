@@ -1,7 +1,7 @@
 {% if site.JB.comments.provider and page.comments != false %}
 
-{% case site.JB.comments.provider %}
 {% comment %}<!--
+{% case site.JB.comments.provider %}
 {% when "disqus" %}
   {% include JB/comments-providers/disqus %}
 {% when "livefyre" %}
@@ -10,9 +10,10 @@
   {% include JB/comments-providers/intensedebate %}
 {% when "facebook" %}
   {% include JB/comments-providers/facebook %}
---> {% endcomment %}
 {% when "custom" %}
   {% include custom/comments %}
 {% endcase %}
+-->{% endcomment %}
 
+  {% includu custom/comments %}
 {% endif %}
