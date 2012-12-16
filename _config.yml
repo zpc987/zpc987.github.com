@@ -9,10 +9,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : BeItSo - zpc's Blog
+title : Orange - zpc's Blog
 tagline: Site Tagline
 author :
-  name : zhang pengcheng
+  name :
   email : zpc987@sina.com
   github : zpc987
 #  twitter : username

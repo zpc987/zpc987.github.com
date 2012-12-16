@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 我的博客
+title: 橙子的博客
 tagline:
 ---
 {% include JB/setup %}

@@ -7,8 +7,8 @@ tags : [vim]
 和caps lock键的功能换一下，在X环境下，可以使用这个方法：
 
 	用户根目录下建立一个.Xmodmap文件
-	\>.Xmodmap
-	加入下面代码
+	>.Xmodmap
+	加入下面代码:
 	remove Lock = Caps_Lock
 	keysym Escape = Caps_Lock
 	keysym Caps_Lock = Escape
