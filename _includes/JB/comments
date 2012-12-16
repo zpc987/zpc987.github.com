@@ -15,5 +15,5 @@
 {% endcase %}
 -->{% endcomment %}
 
-  {% includu custom/comments %}
+  {% include custom/comments %}
 {% endif %}
