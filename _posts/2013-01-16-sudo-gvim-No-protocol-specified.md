@@ -5,7 +5,7 @@ tags : [gvim,ubuntu]
 ---
 使用sudo gvim命令遇到“No protocol specified”，无法打开文件。是因为X server不允许root登陆造成的。解决办法：
 
-1. try starting Vim with "-X" to tell vim not to bother connecting to the X server.  It's fast, easy, and reliable, but loses the ability for root to use the X clipboards 
+1. try starting Vim with "-X" to tell vim not to bother connecting to the X server.  It is fast, easy, and reliable, but loses the ability for root to use the X clipboards 
 	
 	sudo gvim 文件 -X
 
