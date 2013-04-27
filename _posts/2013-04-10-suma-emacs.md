@@ -54,7 +54,7 @@ gdb-restore-windows 恢复窗格布局
 		(global-set-key [mouse-5] 'scroll-up-keep-cursor)
 这种方法有个小问题，即当是多窗格情况，滚轮翻动的始终是光标焦点所在的窗格，而不是鼠标所指向的窗格。
 
-3. .emaca中加入
+3. .emacs中加入
 
 		(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)((control)))
 		mouse-wheel-progressive-speed nil
@@ -63,15 +63,16 @@ gdb-restore-windows 恢复窗格布局
 ---
 #### Emacs编码设置
 
-+ 来用指定的编码重新读入这个文件.
-C-x RET r ( M-x revert-buffer-with-coding-system)
+** 来用指定的编码重新读入这个文件.**  
+C-x RET r ( M-x revert-buffer-with-coding-system)  
 
-+ 不改变当前文件编码，但将该文件另存为utf-8编码格式：  
+** 不改变当前文件编码，但将该文件另存为utf-8编码格式：  **  
 C-x RET c(M-x universal-coding-system-argument ) utf-8  
 （universal-coding-system-argument:用给定的编码系统执行一个I/O命令）
 
 
-**emacs判断文件编码的过程/出现乱码的原因**[转自：](http://blog.waterlin.org/articles/set-emacs-default-coding-system.html）  
+**emacs判断文件编码的过程/出现乱码的原因**
+[from](http://blog.waterlin.org/articles/set-emacs-default-coding-system.html)  
 假设一个文件是gbk编码的，emacs打开文件时首先根据一个包含了许多编码系统的列表（这个列表可以用M-x describe-coding-system看到）依次进行判断，从第一个到最后一个，直至遇到能够识别gbk编码的编码系统才停止。只要列表中含有gbk，那么就可以正常识别；但是若在遇到gbk之前就有其他的编码系统识别该文件（比如latin-1，这个编码系统的识别范围很大），就会出现乱码。所以这个列表的第一项应该是最常用的文件编码比如utf-8（可以通过M-x prefer-coding-system选择或者在.emacs里加上(prefer-coding-system 'utf-8)保存选择）。
 
 #### 转换文本编码
