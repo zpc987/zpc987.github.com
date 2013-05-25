@@ -1,3 +1,9 @@
+---
+layout: post
+category : program
+tags : [emacs]
+---
+
 #### 如何不重新启动 Emacs 就让 .emacs 的配置起作用(4种方法都可以)
 
 1. 用 emacs 打开 .emacs 文件，C-x C-e 光标前面的运行一条语句。立即生效。  
@@ -5,15 +11,15 @@
 3. M-x load-file ~/.emacs  
 4. M-x eval-buffer  
 都是立即生效，可以马上试验一条语句的效果。 例如，在任何一个文件中，写  
-(setq frame-title-format "emacs@%b")  
+` (setq frame-title-format "emacs@%b") ` 
 把光标停在在这条语句后面， C-x C-e ，马上看到 emacs 的 标题栏上发生变化。
 
 ---
 #### gdb  
-命令 功能   
-gdb 启动gdb进行调试   
-gdb-many-windows 切换单窗格/多窗格模式   
-gdb-restore-windows 恢复窗格布局  
+命令                 功能   
+gdb                  启动gdb进行调试   
+gdb-many-windows     切换单窗格/多窗格模式   
+gdb-restore-windows  恢复窗格布局  
   
 设置断点，控制程序流程 4.1 设置、删除断点  
 首先将断点设置在要调试的地方。有两种方法：  
@@ -136,3 +142,25 @@ Emacs把redo看成是对undo的undo。只要` C-f `，之后的undo被认为是r
 #### [evil](http://emacswiki.org/emacs/Evil) 插件
 模拟vim的插件，从vim转过来的user一定要装。
 至少有些vim的功能我们还没能在emacs实现的时候，这是一个好的解决办法。学会自己写插件时，再把相应功能用elisp实现。
+
+#### emacs 中 shell 下的命令
+C-c C-c ：终端当前作业
+C-c C-d ：送出EOF字符
+C-c C-u ：删除当前行
+C-c C-o ：删除最后一条命令的输出
+C-c C-r ：把输出内容第一行移动到文件顶部
+C-c C-e ：把输出内容最后一行移动到文件顶部
+C-c C-p ：移动到前一条命令
+C-c C-n ：移动到后一条命令
+
+#### 有用的移动命令
+M-m ：移动到当前行的第一个不是空白符的位置
+M-^ ：将当前行拼接到上一行
+
+#### [emacs 中目录的操作](http://blog.csdn.net/pfanaya/article/details/6967929)
+
+
+##emacs 的一些比较好的博文
+1. [Emacs 不流行但很拉风的 Feature](http://blog.zhengdong.me/2011/03/31/emacs-features/)
+2. [Emacs 中的查找](http://ann77.emacser.com/Emacs/EmacsSearch.html)
+3. [一年成为Emacs高手](http://blog.csdn.net/redguardtoo/article/details/7222501)
