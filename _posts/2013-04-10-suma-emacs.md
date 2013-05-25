@@ -69,10 +69,10 @@ gdb-restore-windows  恢复窗格布局
 ---
 #### Emacs编码设置
 
-** 来用指定的编码重新读入这个文件.**  
+**来用指定的编码重新读入这个文件.**
 C-x RET r ( M-x revert-buffer-with-coding-system)  
 
-** 不改变当前文件编码，但将该文件另存为utf-8编码格式：  **  
+**不改变当前文件编码，但将该文件另存为utf-8编码格式:**
 C-x RET c(M-x universal-coding-system-argument ) utf-8  
 （universal-coding-system-argument:用给定的编码系统执行一个I/O命令）
 
@@ -100,7 +100,7 @@ C-x RET c(M-x universal-coding-system-argument ) utf-8
 使用` align-regexp `可以使选中的代码按照某一指定字符（可以是正则表达式）对齐。
 
 #### occur 和 re-builder
-输出 BUFFER 中符合正则表达式的所有行，与vim中` [I `的作用差不多。
+输出 BUFFER 中符合正则表达式的所有行，与vim中` [I `的作用差不多。  
 re-builder直接在本文件中高亮，occur会另外打开一个buffer。
 
 #### apropos
@@ -136,26 +136,28 @@ emacs的search比较笨，vim的\*和#可以自动匹配光标下的整个word�
 
 
 #### Emacs 中的 Undo/Redo
-vim可以使用` u `和` C-r `来实现undo和redo，Emacs只有undo，没有redo。
+vim可以使用` u `和` C-r `来实现undo和redo，Emacs只有undo，没有redo。  
 Emacs把redo看成是对undo的undo。只要` C-f `，之后的undo被认为是redo。
 
 #### [evil](http://emacswiki.org/emacs/Evil) 插件
-模拟vim的插件，从vim转过来的user一定要装。
+模拟vim的插件，从vim转过来的user一定要装。  
 至少有些vim的功能我们还没能在emacs实现的时候，这是一个好的解决办法。学会自己写插件时，再把相应功能用elisp实现。
 
 #### emacs 中 shell 下的命令
-C-c C-c ：终端当前作业
-C-c C-d ：送出EOF字符
-C-c C-u ：删除当前行
-C-c C-o ：删除最后一条命令的输出
-C-c C-r ：把输出内容第一行移动到文件顶部
-C-c C-e ：把输出内容最后一行移动到文件顶部
-C-c C-p ：移动到前一条命令
-C-c C-n ：移动到后一条命令
 
+	C-c C-c ：终端当前作业
+	C-c C-d ：送出EOF字符
+	C-c C-u ：删除当前行
+	C-c C-o ：删除最后一条命令的输出
+	C-c C-r ：把输出内容第一行移动到文件顶部
+	C-c C-e ：把输出内容最后一行移动到文件顶部
+	C-c C-p ：移动到前一条命令
+	C-c C-n ：移动到后一条命令
+	
 #### 有用的移动命令
-M-m ：移动到当前行的第一个不是空白符的位置
-M-^ ：将当前行拼接到上一行
+
+	M-m ：移动到当前行的第一个不是空白符的位置
+	M-^ ：将当前行拼接到上一行
 
 #### [emacs 中目录的操作](http://blog.csdn.net/pfanaya/article/details/6967929)
 
