@@ -70,13 +70,11 @@ gdb-restore-windows  恢复窗格布局
 #### Emacs编码设置
 
 **来用指定的编码重新读入这个文件.**
-
-	C-x RET r ( M-x revert-buffer-with-coding-system)
+C-x RET r ( M-x revert-buffer-with-coding-system)  
 
 **不改变当前文件编码，但将该文件另存为utf-8编码格式:**
-
-	C-x RET c(M-x universal-coding-system-argument ) utf-8
-	（universal-coding-system-argument:用给定的编码系统执行一个I/O命令）
+C-x RET c(M-x universal-coding-system-argument ) utf-8  
+（universal-coding-system-argument:用给定的编码系统执行一个I/O命令）
 
 
 **emacs判断文件编码的过程/出现乱码的原因**
