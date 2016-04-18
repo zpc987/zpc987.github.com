@@ -15,6 +15,7 @@ tags : [emacs]
 把光标停在在这条语句后面， C-x C-e ，马上看到 emacs 的 标题栏上发生变化。
 
 ---
+
 #### gdb  
 命令                 功能   
 gdb                  启动gdb进行调试   
@@ -39,6 +40,7 @@ gdb-restore-windows  恢复窗格布局
 	string
     
 ---
+
 #### Emacs 中的鼠标滚轮翻阅设置
 1. 最好的办法是在Customize中设置mouse wheel的 Mouse Wheel Scroll Amount.
 把其值设为鼠标滚动一次想要翻过的行数。还可关闭Mouse Wheel Progressive Speed.
@@ -67,6 +69,7 @@ gdb-restore-windows  恢复窗格布局
 		scroll-step 1)
 
 ---
+
 #### Emacs编码设置
 
 **来用指定的编码重新读入这个文件.**
@@ -162,7 +165,8 @@ Emacs把redo看成是对undo的undo。只要` C-f `，之后的undo被认为是r
 #### [emacs 中目录的操作](http://blog.csdn.net/pfanaya/article/details/6967929)
 
 
-##emacs 的一些比较好的博文
+### emacs 的一些比较好的博文
+
 1. [Emacs 不流行但很拉风的 Feature](http://blog.zhengdong.me/2011/03/31/emacs-features/)
 2. [Emacs 中的查找](http://ann77.emacser.com/Emacs/EmacsSearch.html)
 3. [一年成为Emacs高手](http://blog.csdn.net/redguardtoo/article/details/7222501)
